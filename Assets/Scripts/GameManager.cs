@@ -90,7 +90,7 @@ public class GameManager : MonoBehaviour {
         Quaternion? playerRotation = CheckPointManager.instance.playerRotation;
 
         player.SetPosition(playerPosition != null ? (Vector3)playerPosition : player.transform.position)
-            .Setlife(playerLife != null ? (int)playerLife : player.life)
+           // .Setlife(playerLife != null ? (int)playerLife : player.life)
             .SetRotation(playerRotation != null ? (Quaternion)playerRotation : player.transform.rotation);
 
         CameraManager.instance.OnLoadCheckpoint(CheckPointManager.instance.cameraLocalEulerRot);

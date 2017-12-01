@@ -36,7 +36,7 @@ public class CheckPointManager : MonoBehaviour {
         cameraLocalEulerRot = checkPointTransform.eulerAngles; //camera.transform.localEulerAngles;
         playerPosition = checkPointTransform.position;
         playerRotation = checkPointTransform.rotation;
-        playerLife = player.life;
+       // playerLife = player.life;
     }
 
 

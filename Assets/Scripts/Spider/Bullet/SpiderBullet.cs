@@ -2,18 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpiderBullet : MonoBehaviour {
-
-
-    //public enum type {
-    //    Poison,
-    //    Normal,
-    //    Stun
-    //} 
+public class SpiderBullet : MonoBehaviour { 
     [Header("Damage")]
     public int NormalHitDamage = 15;
     public int PoisonHitDamage = 15;
     public int StunHitDamage = 15;
+    public LayerMask damageToLayer;
 
     [Header("EffectDamage")]
     public int PoisonEffectDamage = 5;
@@ -118,15 +112,31 @@ public class SpiderBullet : MonoBehaviour {
         bulletObj.gameObject.SetActive(false);
     }
 
+    public float radiusOfOverlap = .5f;
+    Vector3 posOverlap = new Vector3();
+
     void OnTriggerEnter(Collider c) {
         if (playerDamageable == null)
             playerDamageable = GameManager.instance.Player.GetComponent<IDamagable>();
-        if (c.gameObject.layer == 10) { //Squirrel 
-            if(_strategy != null)
-                _strategy.playerHitted(playerDamageable); //comentado hasta que se implemente idamageable en squirrel
-            //Debug.Log("bla");
+
+        var o = Physics.OverlapSphere(transform.position, radiusOfOverlap, damageToLayer);
+        if(o.Length > 0) {
+            posOverlap = transform.position;
+            if (_strategy != null)
+                _strategy.playerHitted(playerDamageable);
         }
+
+        //if (c.gameObject.layer == 10) { //Squirrel 
+        //    if(_strategy != null)
+        //        _strategy.playerHitted(playerDamageable); //comentado hasta que se implemente idamageable en squirrel
+        //    //Debug.Log("bla");
+        //}
         if(c.gameObject.layer != 15 && c.gameObject.layer != 16 && c.gameObject.layer != 19 ) //spider //spiderBullet //checkpoint
             SpiderBulletManager.instance.ReturnBulletToPool(this);
+    }
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.green;
+        Gizmos.DrawWireSphere(posOverlap, radiusOfOverlap);
     }
 }
