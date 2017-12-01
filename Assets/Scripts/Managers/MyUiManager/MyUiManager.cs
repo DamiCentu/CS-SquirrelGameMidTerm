@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -9,6 +10,9 @@ public class MyUiManager : MonoBehaviour {
     public float fadeInDuration = 1f;
     public float deathFadeOutDuration = 2f;
     public static MyUiManager instance { get; private set; }
+    private float percentageLife = 1;
+    public Image lifeBar;
+
 
     void Awake() {
         Debug.Assert(FindObjectsOfType<MyUiManager>().Length == 1);
@@ -81,4 +85,8 @@ public class MyUiManager : MonoBehaviour {
         EventManager.instance.ExecuteEvent("FadeInDone");
     }
 
+    internal void UpdateLife(float v)
+    {
+        lifeBar.transform.localScale = new Vector3(v, lifeBar.transform.localScale.y, lifeBar.transform.localScale.z);
+    }
 }

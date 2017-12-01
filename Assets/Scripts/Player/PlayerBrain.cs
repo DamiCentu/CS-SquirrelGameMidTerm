@@ -8,7 +8,7 @@ public class PlayerBrain : MonoBehaviour, IPositionPredictable,IDamagable, IStun
     private IMoventOnAir _onAirMovent;
     private IMoventOnSurface _onMoventSurface;
     private IActions _actions;
-    public bool onGround;
+    public bool onGround=false;
     public static PlayerBrain instance ;
     internal bool jumping;
     internal bool canJump;
@@ -19,7 +19,7 @@ public class PlayerBrain : MonoBehaviour, IPositionPredictable,IDamagable, IStun
     internal Rigidbody rb;
     internal CapsuleCollider _capsuleCollider;
     internal SphereCollider _capsuleSphere;
-    public int life=3;
+    public int life;
     private Dictionary<String, int> amountBullets=new Dictionary<string, int>();
     private Vector3 _capsuleCenterNormalPosition = new Vector3(0f, 0.08f, 0.13f);
     private Vector3 _capsuleCenterStandUpPosition = new Vector3(0f, 0.16f, 0.07f);
@@ -39,6 +39,8 @@ public class PlayerBrain : MonoBehaviour, IPositionPredictable,IDamagable, IStun
     private bool isDead = false;
     private bool stayOnTheGround;
     internal bool finishGame=false;
+    public int maxLife=100;
+
     internal PlayerBrain SetPosition(Vector3 vector3)
     {
         this.transform.position = vector3;
@@ -89,6 +91,7 @@ public class PlayerBrain : MonoBehaviour, IPositionPredictable,IDamagable, IStun
             life = 0;
             Die();
         }
+        MyUiManager.instance.UpdateLife(  life/ (float)maxLife);
     }
 
     private void Die()
@@ -99,6 +102,7 @@ public class PlayerBrain : MonoBehaviour, IPositionPredictable,IDamagable, IStun
     }
 
     public void Awake() {
+        life = maxLife;
         if (instance == null)
         {
             instance = this;
