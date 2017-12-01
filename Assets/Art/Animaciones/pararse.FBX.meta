@@ -1,0 +1,240 @@
+fileFormatVersion: 2
+guid: 9ea864877ee3f754f98ca38e5f2ff5ca
+timeCreated: 1506903126
+licenseType: Free
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: ardilla final
+    100002: CATRigHub001
+    100004: CATRigHub002
+    100006: CATRigHub003
+    100008: CATRigHub003Bone001
+    100010: CATRigHub003Bone001Bone001
+    100012: CATRigHub003Bone001Bone002
+    100014: CATRigHub003Bone002
+    100016: CATRigLArm1
+    100018: CATRigLArm2
+    100020: CATRigLArmCollarbone
+    100022: CATRigLArmDigit11
+    100024: CATRigLArmDigit12
+    100026: CATRigLArmDigit13
+    100028: CATRigLArmDigit21
+    100030: CATRigLArmDigit22
+    100032: CATRigLArmDigit23
+    100034: CATRigLArmDigit31
+    100036: CATRigLArmDigit32
+    100038: CATRigLArmDigit33
+    100040: CATRigLArmDigit41
+    100042: CATRigLArmDigit42
+    100044: CATRigLArmDigit43
+    100046: CATRigLArmPalm
+    100048: CATRigLLeg1
+    100050: CATRigLLeg2
+    100052: CATRigLLegAnkle
+    100054: CATRigLLegDigit11
+    100056: CATRigRArm1
+    100058: CATRigRArm2
+    100060: CATRigRArmCollarbone
+    100062: CATRigRArmDigit11
+    100064: CATRigRArmDigit12
+    100066: CATRigRArmDigit13
+    100068: CATRigRArmDigit21
+    100070: CATRigRArmDigit22
+    100072: CATRigRArmDigit23
+    100074: CATRigRArmDigit31
+    100076: CATRigRArmDigit32
+    100078: CATRigRArmDigit33
+    100080: CATRigRArmDigit41
+    100082: CATRigRArmDigit42
+    100084: CATRigRArmDigit43
+    100086: CATRigRArmPalm
+    100088: CATRigRLeg1
+    100090: CATRigRLeg2
+    100092: CATRigRLegAnkle
+    100094: CATRigRLegDigit11
+    100096: CATRigSpine1
+    100098: CATRigSpine1 1
+    100100: CATRigSpine2
+    100102: CATRigSpine2 1
+    100104: CATRigSpine3
+    100106: CATRigSpine4
+    100108: CATRigTail1
+    100110: CATRigTail2
+    100112: CATRigTail3
+    100114: CATRigTail4
+    100116: CATRigTail5
+    100118: CATRigTail6
+    100120: CATRigTail7
+    100122: CATRigTail8
+    100124: //RootNode
+    400000: ardilla final
+    400002: CATRigHub001
+    400004: CATRigHub002
+    400006: CATRigHub003
+    400008: CATRigHub003Bone001
+    400010: CATRigHub003Bone001Bone001
+    400012: CATRigHub003Bone001Bone002
+    400014: CATRigHub003Bone002
+    400016: CATRigLArm1
+    400018: CATRigLArm2
+    400020: CATRigLArmCollarbone
+    400022: CATRigLArmDigit11
+    400024: CATRigLArmDigit12
+    400026: CATRigLArmDigit13
+    400028: CATRigLArmDigit21
+    400030: CATRigLArmDigit22
+    400032: CATRigLArmDigit23
+    400034: CATRigLArmDigit31
+    400036: CATRigLArmDigit32
+    400038: CATRigLArmDigit33
+    400040: CATRigLArmDigit41
+    400042: CATRigLArmDigit42
+    400044: CATRigLArmDigit43
+    400046: CATRigLArmPalm
+    400048: CATRigLLeg1
+    400050: CATRigLLeg2
+    400052: CATRigLLegAnkle
+    400054: CATRigLLegDigit11
+    400056: CATRigRArm1
+    400058: CATRigRArm2
+    400060: CATRigRArmCollarbone
+    400062: CATRigRArmDigit11
+    400064: CATRigRArmDigit12
+    400066: CATRigRArmDigit13
+    400068: CATRigRArmDigit21
+    400070: CATRigRArmDigit22
+    400072: CATRigRArmDigit23
+    400074: CATRigRArmDigit31
+    400076: CATRigRArmDigit32
+    400078: CATRigRArmDigit33
+    400080: CATRigRArmDigit41
+    400082: CATRigRArmDigit42
+    400084: CATRigRArmDigit43
+    400086: CATRigRArmPalm
+    400088: CATRigRLeg1
+    400090: CATRigRLeg2
+    400092: CATRigRLegAnkle
+    400094: CATRigRLegDigit11
+    400096: CATRigSpine1
+    400098: CATRigSpine1 1
+    400100: CATRigSpine2
+    400102: CATRigSpine2 1
+    400104: CATRigSpine3
+    400106: CATRigSpine4
+    400108: CATRigTail1
+    400110: CATRigTail2
+    400112: CATRigTail3
+    400114: CATRigTail4
+    400116: CATRigTail5
+    400118: CATRigTail6
+    400120: CATRigTail7
+    400122: CATRigTail8
+    400124: //RootNode
+    4300000: ardilla final
+    7400000: StandUp
+    9500000: //RootNode
+    13700000: ardilla final
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: StandUp
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 25.1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1.5
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

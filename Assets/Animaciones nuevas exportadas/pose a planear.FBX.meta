@@ -1,0 +1,308 @@
+fileFormatVersion: 2
+guid: 83836d645bf7ccb47bbdbb46fd459f5a
+timeCreated: 1510857181
+licenseType: Free
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: ardilla final
+    100002: CATRigHub001
+    100004: CATRigHub001Gizmo
+    100006: CATRigHub002
+    100008: CATRigHub002Gizmo
+    100010: CATRigHub003
+    100012: CATRigHub003Bone001
+    100014: CATRigHub003Bone001Bone001
+    100016: CATRigHub003Bone001Bone002
+    100018: CATRigHub003Bone002
+    100020: CATRigHub003Gizmo
+    100022: CATRigLArm1
+    100024: CATRigLArm21
+    100026: CATRigLArm22
+    100028: CATRigLArm22Gizmo
+    100030: CATRigLArmCollarbone
+    100032: CATRigLArmCollarboneGizmo
+    100034: CATRigLArmDigit11
+    100036: CATRigLArmDigit11Gizmo
+    100038: CATRigLArmDigit12
+    100040: CATRigLArmDigit12Gizmo
+    100042: CATRigLArmDigit13
+    100044: CATRigLArmDigit13Gizmo
+    100046: CATRigLArmDigit21
+    100048: CATRigLArmDigit21Gizmo
+    100050: CATRigLArmDigit22
+    100052: CATRigLArmDigit22Gizmo
+    100054: CATRigLArmDigit23
+    100056: CATRigLArmDigit23Gizmo
+    100058: CATRigLArmDigit31
+    100060: CATRigLArmDigit31Gizmo
+    100062: CATRigLArmDigit32
+    100064: CATRigLArmDigit32Gizmo
+    100066: CATRigLArmDigit33
+    100068: CATRigLArmDigit33Gizmo
+    100070: CATRigLArmDigit41
+    100072: CATRigLArmDigit41Gizmo
+    100074: CATRigLArmDigit42
+    100076: CATRigLArmDigit42Gizmo
+    100078: CATRigLArmDigit43
+    100080: CATRigLArmDigit43Gizmo
+    100082: CATRigLArmIKTarget
+    100084: CATRigLArmPalm
+    100086: CATRigLArmPalmGizmo
+    100088: CATRigLArmUpVectorNode
+    100090: CATRigLLeg1
+    100092: CATRigLLeg2
+    100094: CATRigLLegAnkle
+    100096: CATRigLLegAnkleGizmo
+    100098: CATRigLLegDigit11
+    100100: CATRigLLegPlatform
+    100102: CATRigRArm1
+    100104: CATRigRArm21
+    100106: CATRigRArm22
+    100108: CATRigRArm22Gizmo
+    100110: CATRigRArmCollarbone
+    100112: CATRigRArmCollarboneGizmo
+    100114: CATRigRArmDigit11
+    100116: CATRigRArmDigit11Gizmo
+    100118: CATRigRArmDigit12
+    100120: CATRigRArmDigit12Gizmo
+    100122: CATRigRArmDigit13
+    100124: CATRigRArmDigit13Gizmo
+    100126: CATRigRArmDigit21
+    100128: CATRigRArmDigit21Gizmo
+    100130: CATRigRArmDigit22
+    100132: CATRigRArmDigit22Gizmo
+    100134: CATRigRArmDigit23
+    100136: CATRigRArmDigit23Gizmo
+    100138: CATRigRArmDigit31
+    100140: CATRigRArmDigit31Gizmo
+    100142: CATRigRArmDigit32
+    100144: CATRigRArmDigit32Gizmo
+    100146: CATRigRArmDigit33
+    100148: CATRigRArmDigit33Gizmo
+    100150: CATRigRArmDigit41
+    100152: CATRigRArmDigit41Gizmo
+    100154: CATRigRArmDigit42
+    100156: CATRigRArmDigit42Gizmo
+    100158: CATRigRArmDigit43
+    100160: CATRigRArmDigit43Gizmo
+    100162: CATRigRArmIKTarget
+    100164: CATRigRArmPalm
+    100166: CATRigRArmPalmGizmo
+    100168: CATRigRArmUpVectorNode
+    100170: CATRigRLeg1
+    100172: CATRigRLeg2
+    100174: CATRigRLegAnkle
+    100176: CATRigRLegAnkleGizmo
+    100178: CATRigRLegDigit11
+    100180: CATRigRLegPlatform
+    100182: CATRigSpine1
+    100184: CATRigSpine1 1
+    100186: CATRigSpine2
+    100188: CATRigSpine2 1
+    100190: CATRigSpine3
+    100192: CATRigSpine4
+    100194: CATRigTail1
+    100196: CATRigTail2
+    100198: CATRigTail3
+    100200: CATRigTail4
+    100202: CATRigTail5
+    100204: CATRigTail6
+    100206: CATRigTail7
+    100208: CATRigTail8
+    100210: Character001
+    100212: //RootNode
+    100214: Rectangle001
+    100216: Rectangle002
+    100218: Rectangle003
+    100220: Rectangle004
+    400000: ardilla final
+    400002: CATRigHub001
+    400004: CATRigHub001Gizmo
+    400006: CATRigHub002
+    400008: CATRigHub002Gizmo
+    400010: CATRigHub003
+    400012: CATRigHub003Bone001
+    400014: CATRigHub003Bone001Bone001
+    400016: CATRigHub003Bone001Bone002
+    400018: CATRigHub003Bone002
+    400020: CATRigHub003Gizmo
+    400022: CATRigLArm1
+    400024: CATRigLArm21
+    400026: CATRigLArm22
+    400028: CATRigLArm22Gizmo
+    400030: CATRigLArmCollarbone
+    400032: CATRigLArmCollarboneGizmo
+    400034: CATRigLArmDigit11
+    400036: CATRigLArmDigit11Gizmo
+    400038: CATRigLArmDigit12
+    400040: CATRigLArmDigit12Gizmo
+    400042: CATRigLArmDigit13
+    400044: CATRigLArmDigit13Gizmo
+    400046: CATRigLArmDigit21
+    400048: CATRigLArmDigit21Gizmo
+    400050: CATRigLArmDigit22
+    400052: CATRigLArmDigit22Gizmo
+    400054: CATRigLArmDigit23
+    400056: CATRigLArmDigit23Gizmo
+    400058: CATRigLArmDigit31
+    400060: CATRigLArmDigit31Gizmo
+    400062: CATRigLArmDigit32
+    400064: CATRigLArmDigit32Gizmo
+    400066: CATRigLArmDigit33
+    400068: CATRigLArmDigit33Gizmo
+    400070: CATRigLArmDigit41
+    400072: CATRigLArmDigit41Gizmo
+    400074: CATRigLArmDigit42
+    400076: CATRigLArmDigit42Gizmo
+    400078: CATRigLArmDigit43
+    400080: CATRigLArmDigit43Gizmo
+    400082: CATRigLArmIKTarget
+    400084: CATRigLArmPalm
+    400086: CATRigLArmPalmGizmo
+    400088: CATRigLArmUpVectorNode
+    400090: CATRigLLeg1
+    400092: CATRigLLeg2
+    400094: CATRigLLegAnkle
+    400096: CATRigLLegAnkleGizmo
+    400098: CATRigLLegDigit11
+    400100: CATRigLLegPlatform
+    400102: CATRigRArm1
+    400104: CATRigRArm21
+    400106: CATRigRArm22
+    400108: CATRigRArm22Gizmo
+    400110: CATRigRArmCollarbone
+    400112: CATRigRArmCollarboneGizmo
+    400114: CATRigRArmDigit11
+    400116: CATRigRArmDigit11Gizmo
+    400118: CATRigRArmDigit12
+    400120: CATRigRArmDigit12Gizmo
+    400122: CATRigRArmDigit13
+    400124: CATRigRArmDigit13Gizmo
+    400126: CATRigRArmDigit21
+    400128: CATRigRArmDigit21Gizmo
+    400130: CATRigRArmDigit22
+    400132: CATRigRArmDigit22Gizmo
+    400134: CATRigRArmDigit23
+    400136: CATRigRArmDigit23Gizmo
+    400138: CATRigRArmDigit31
+    400140: CATRigRArmDigit31Gizmo
+    400142: CATRigRArmDigit32
+    400144: CATRigRArmDigit32Gizmo
+    400146: CATRigRArmDigit33
+    400148: CATRigRArmDigit33Gizmo
+    400150: CATRigRArmDigit41
+    400152: CATRigRArmDigit41Gizmo
+    400154: CATRigRArmDigit42
+    400156: CATRigRArmDigit42Gizmo
+    400158: CATRigRArmDigit43
+    400160: CATRigRArmDigit43Gizmo
+    400162: CATRigRArmIKTarget
+    400164: CATRigRArmPalm
+    400166: CATRigRArmPalmGizmo
+    400168: CATRigRArmUpVectorNode
+    400170: CATRigRLeg1
+    400172: CATRigRLeg2
+    400174: CATRigRLegAnkle
+    400176: CATRigRLegAnkleGizmo
+    400178: CATRigRLegDigit11
+    400180: CATRigRLegPlatform
+    400182: CATRigSpine1
+    400184: CATRigSpine1 1
+    400186: CATRigSpine2
+    400188: CATRigSpine2 1
+    400190: CATRigSpine3
+    400192: CATRigSpine4
+    400194: CATRigTail1
+    400196: CATRigTail2
+    400198: CATRigTail3
+    400200: CATRigTail4
+    400202: CATRigTail5
+    400204: CATRigTail6
+    400206: CATRigTail7
+    400208: CATRigTail8
+    400210: Character001
+    400212: //RootNode
+    400214: Rectangle001
+    400216: Rectangle002
+    400218: Rectangle003
+    400220: Rectangle004
+    4300000: ardilla final
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: ardilla final
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1.5
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
