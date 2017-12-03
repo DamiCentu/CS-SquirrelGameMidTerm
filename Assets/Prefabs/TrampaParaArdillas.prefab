@@ -19,7 +19,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4699357916836660}
-  m_Layer: 0
+  m_Layer: 21
   m_Name: Bone001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34,7 +34,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4195704906107824}
-  m_Layer: 0
+  m_Layer: 21
   m_Name: Bone005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49,7 +49,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4899304762969168}
-  m_Layer: 0
+  m_Layer: 21
   m_Name: Bone003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -65,7 +65,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4148142569015426}
   - component: {fileID: 137904931535445220}
-  m_Layer: 0
+  m_Layer: 21
   m_Name: Box002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -80,7 +80,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4537685799244010}
-  m_Layer: 0
+  m_Layer: 21
   m_Name: Bone004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -98,7 +98,7 @@ GameObject:
   - component: {fileID: 95727217334479214}
   - component: {fileID: 135487744082942778}
   - component: {fileID: 114417461047431516}
-  m_Layer: 0
+  m_Layer: 21
   m_Name: TrampaParaArdillas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -113,7 +113,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4202931806445350}
-  m_Layer: 0
+  m_Layer: 21
   m_Name: Bone002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -206,8 +206,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1636988165452052}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 91.067116, y: -16.295, z: 184.23512}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 71.90755, y: -16.425, z: 162.31186}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4699357916836660}
@@ -260,7 +260,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.4
+  m_Radius: 0.3
   m_Center: {x: 0.58, y: 0, z: -0.86}
 --- !u!137 &137904931535445220
 SkinnedMeshRenderer:

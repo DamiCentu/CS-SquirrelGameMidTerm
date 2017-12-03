@@ -13,8 +13,10 @@ public class NormalMovent : MonoBehaviour, IMoventOnSurface
     internal float currentVelocity;
     public Rigidbody rb;
     public Transform playerTransform;
+    public Transform playerCenter;
     public Transform cameraTransform;
     private Vector3 _lastDirection;
+    public LayerMask wallLayersMask;
 
     void IMoventOnSurface.Active()
     {
@@ -22,7 +24,7 @@ public class NormalMovent : MonoBehaviour, IMoventOnSurface
     }
     void IMoventOnSurface.Move()
     {
-
+        rb.velocity = new Vector3(0, rb.velocity.y, rb.velocity.z);
         Vector3 cameraForward = cameraTransform.TransformDirection(Vector3.forward);
         cameraForward.y = 0;
 
@@ -55,11 +57,11 @@ public class NormalMovent : MonoBehaviour, IMoventOnSurface
         {
             Vector3 asd = rotateDirection_normal.normalized * velocity * Time.deltaTime;
             asd.y = 0;
-            rb.MovePosition(asd + rb.position);
-         //   _animator.SetBool("IsRunning", true);
+           if (!Physics.Raycast(playerCenter.position, playerTransform.forward, 0.3f,wallLayersMask)) {
+                rb.MovePosition(asd + rb.position);
+            }
+
         }
-       // else
-           // _animator.SetBool("IsRunning", false);
 
     }
 
