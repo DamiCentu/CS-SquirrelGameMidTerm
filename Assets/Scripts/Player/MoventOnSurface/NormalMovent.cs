@@ -25,7 +25,7 @@ public class NormalMovent : MonoBehaviour, IMoventOnSurface
     }
     void IMoventOnSurface.Move()
     {
-        rb.velocity = new Vector3(0, rb.velocity.y, rb.velocity.z);
+        rb.velocity = new Vector3(0, rb.velocity.y,0);
         Vector3 cameraForward = cameraTransform.TransformDirection(Vector3.forward);
         cameraForward.y = 0;
 
@@ -77,6 +77,20 @@ public class NormalMovent : MonoBehaviour, IMoventOnSurface
             velocity = runningVelocity;
         }
     }
+
+    internal  void PreventGettingStuck()
+    {
+        RaycastHit info;
+        if(!PlayerBrain.instance.onGround && Physics.Raycast(playerCenter.position, playerTransform.forward, out info,0.3f, floorLayersMask))
+        {
+            rb.MovePosition( info.normal + rb.position);
+        }
+   /*     if (!PlayerBrain.instance.onGround && Physics.Raycast(playerCenter.position, playerTransform.forward, out info, 0.3f, wallLayersMask))
+        {
+            rb.MovePosition(info.normal + rb.position);
+        }*/
+    }
+
     public bool ShouldMove()
     {
         return (!Physics.Raycast(playerCenter.position, playerTransform.forward, 0.3f, wallLayersMask) // si no me estoy chocando con una pared default

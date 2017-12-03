@@ -61,17 +61,17 @@ public class PlayerBrain : MonoBehaviour, IPositionPredictable,IDamagable, IStun
     {
         if (stayOnTheGround)
         {
-   //         if (Physics.Raycast(this.transform.position, Vector3.down, 0.1f)) {
+            if (Physics.Raycast(this.transform.position, Vector3.down, 0.1f)) {
                 onGround = true;
          //       _timer = 0;
-   //        }
+           }
         }
         else {
- //           if (!Physics.Raycast(this.transform.position, Vector3.down, 0.1f)) {
+            if (!Physics.Raycast(this.transform.position, Vector3.down, 0.1f)) {
   //              if (_timer > timeToFall)
                    onGround = false;
 //                    _timer += Time.deltaTime;
-  //          }
+            }
         }
     }
 

@@ -82,8 +82,9 @@ public class PlayerStateOnFalling :MonoBehaviour ,IState {
         {
             _normalMovent.ShouldWalk(false);
         }
-
+        _normalMovent.PreventGettingStuck();
         PlayerAnimator.instance.SetSpeed(_normalMovent.currentVelocity);
+    
     }
 
     void IState.setParam(object param)
