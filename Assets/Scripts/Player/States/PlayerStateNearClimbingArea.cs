@@ -17,7 +17,7 @@ public class PlayerStateNearClimbingArea : MonoBehaviour, IState {
     }
     void IState.Begin()
     {
-
+        PlayerBrain.instance.rb.useGravity = true;
         PlayerBrain.instance.SetBehabiour(_normalMovent, _withoutMoventOnAir, _noAction);
         PlayerAnimator.instance.NearClimbingArea(true);
       

@@ -28,7 +28,7 @@ public class MoventOnTree : MonoBehaviour, IMoventOnSurface {
         //print("asd");
 
         rb.velocity = Vector3.zero;
-        rb.useGravity = false;
+       // rb.useGravity = false;
         currentVelocity = direction.magnitude;
         /*   Vector3 final_velocity = rb.velocity;
            final_velocity.y = 0;

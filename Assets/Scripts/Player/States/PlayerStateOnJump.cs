@@ -30,6 +30,7 @@ public class PlayerStateOnJump : MonoBehaviour,IState
 
     void IState.Begin()
     {
+        PlayerBrain.instance.rb.useGravity = false;
         PlayerBrain.instance.canJump = false;
         PlayerBrain.instance.canJumoOnAir= false;
         _timer = 0;
@@ -42,6 +43,7 @@ public class PlayerStateOnJump : MonoBehaviour,IState
 
     void IState.Finish()
     {
+        PlayerBrain.instance.rb.useGravity = true;
         PlayerAnimator.instance.Jump(false);
         PlayerBrain.instance.jumping = false;
         

@@ -35,7 +35,7 @@ public class JumpBehaviour : MonoBehaviour, IMoventOnAir {
 
     void Start () {
         _timer = 0;
-        rb.useGravity = false;
+       // rb.useGravity = false;
     }
 
     public void SetShortJump()

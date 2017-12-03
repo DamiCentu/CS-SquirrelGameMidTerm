@@ -11,7 +11,7 @@ public class GlideBehaviour : MonoBehaviour,IMoventOnAir
 
     void IMoventOnAir.Active()
     {
-        rb.useGravity = true;
+       // rb.useGravity = true;
         rb.velocity = Vector3.zero;
         rb.AddForce(Vector3.up * initialGlideIntensity, ForceMode.Force);
     }

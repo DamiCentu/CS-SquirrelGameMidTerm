@@ -17,6 +17,7 @@ public class NormalMovent : MonoBehaviour, IMoventOnSurface
     public Transform cameraTransform;
     private Vector3 _lastDirection;
     public LayerMask wallLayersMask;
+    public LayerMask floorLayersMask;
 
     void IMoventOnSurface.Active()
     {
@@ -57,7 +58,7 @@ public class NormalMovent : MonoBehaviour, IMoventOnSurface
         {
             Vector3 asd = rotateDirection_normal.normalized * velocity * Time.deltaTime;
             asd.y = 0;
-           if (!Physics.Raycast(playerCenter.position, playerTransform.forward, 0.3f,wallLayersMask)) {
+           if (ShouldMove()) {
                 rb.MovePosition(asd + rb.position);
             }
 
@@ -76,7 +77,12 @@ public class NormalMovent : MonoBehaviour, IMoventOnSurface
             velocity = runningVelocity;
         }
     }
+    public bool ShouldMove()
+    {
+        return (!Physics.Raycast(playerCenter.position, playerTransform.forward, 0.3f, wallLayersMask) // si no me estoy chocando con una pared default
+                && !(!PlayerBrain.instance.onGround && Physics.Raycast(playerCenter.position, playerTransform.forward, 0.3f, floorLayersMask)));// y si no estoy cayendome y chocandome contra algo
 
+    }
     Vector3 IPositionPredictable.currentDirection()
     {
         return _lastDirection;

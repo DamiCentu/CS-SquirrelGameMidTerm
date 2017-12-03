@@ -19,7 +19,7 @@ public class PlayerStateClimbing : MonoBehaviour, IState
     }
     void IState.Begin()
     {
-
+        PlayerBrain.instance.rb.useGravity = false;
         PlayerBrain.instance.SetBehabiour(_climbMovent, _withoutMoventOnAir, _noAction);
         PlayerAnimator.instance.Climb(true);
         PlayerBrain.instance.StandUpPosition();
@@ -28,6 +28,7 @@ public class PlayerStateClimbing : MonoBehaviour, IState
 
     void IState.Finish()
     {
+        PlayerBrain.instance.rb.useGravity = true;
         PlayerAnimator.instance.Climb(false);
     }
 
